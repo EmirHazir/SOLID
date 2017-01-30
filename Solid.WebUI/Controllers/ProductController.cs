@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Solid.Services.SSAbstract;
+using Solid.WebUI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,12 @@ namespace Solid.WebUI.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var products = _productService.GetAll();
+            ProductListModel model = new ProductListModel
+            {
+                Products = products
+            };
+            return View(model);
         }
     }
 }

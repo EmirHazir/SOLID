@@ -4,14 +4,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.IdentityModel.Protocols;
 
 namespace Solid.Data.SDConcrete.SDEntityFramework
 {
     public class NorthwindContext : DbContext
     {
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.; Database=NORTHWND; User Id=sa; Password=123;");
+            optionsBuilder.UseSqlServer(@"Data Source=.;Database=NORTHWND;User ID=sa;Password=123;"); 
         }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }

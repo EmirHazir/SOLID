@@ -1326,7 +1326,7 @@
         "framework": ".NETStandard,Version=v1.6",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "1.1.0",
-          "NETStandard.Library": "1.6.0"
+          "NETStandard.Library": "1.0.0"
         },
         "compile": {
           "netstandard1.6/Solid.Core.dll": {}
@@ -4672,7 +4672,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "NETStandard.Library >= 1.6.0",
+      "NETStandard.Library >= 1.0.0",
       "Solid.Core >= 1.0.0-*"
     ],
     ".NETStandard,Version=v1.6": []

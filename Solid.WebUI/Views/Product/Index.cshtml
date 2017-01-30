@@ -1,20 +1,29 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@model dynamic
+@model Solid.WebUI.Models.ProductListModel
 @{
-    Layout = null;
+    Layout = "~/Views/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-    <div>
-        Hello World!
-    </div>
-</body>
-</html>
+
+<div>
+    <table>
+        <tr>
+            <td>Product Name</td>
+            <td>Product Price</td>
+            <td>Product in Stock</td>
+        </tr>
+        @foreach (var item in Model.Products)
+            {
+            <tr>
+                <td>@item.ProductName</td>
+                <td>@item.UnitPrice</td>
+                <td>@item.UnitsInStock</td>
+            </tr>
+        }
+    </table>
+</div>
+
+
