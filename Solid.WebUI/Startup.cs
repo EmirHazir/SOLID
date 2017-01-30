@@ -11,6 +11,7 @@ using Solid.Services.SSAbstract;
 using Solid.Services.SSConcrete;
 using Solid.Data.SDAbstract;
 using Solid.Data.SDConcrete.SDEntityFramework;
+using Solid.WebUI.Middlewares;
 
 namespace Solid.WebUI
 {
@@ -33,6 +34,9 @@ namespace Solid.WebUI
             {
                 app.UseDeveloperExceptionPage();
             }
+            //app.UseStaticFiles(); Middleware klasörü içinde yazdğım statik class
+            app.UseFileServer();
+            app.UseNodeModules(env.ContentRootPath);
 
             app.UseMvcWithDefaultRoute();
         }
