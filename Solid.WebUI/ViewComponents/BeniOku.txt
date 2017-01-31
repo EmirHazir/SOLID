@@ -1,0 +1,1 @@
+﻿Burası Core daki PartialView mantığı

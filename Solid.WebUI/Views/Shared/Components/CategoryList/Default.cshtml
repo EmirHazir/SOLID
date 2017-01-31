@@ -1,0 +1,17 @@
+﻿@model Solid.WebUI.Models.CategoryListModel
+
+
+<div class="list-group">
+    @foreach (var category in Model.Categories)
+    {
+        //burada mevcut olan css clasını css e eşitledik. Sonra CategoryListViewComponent cs te yazdığımız CurrentCategory ["category"] ile Get isteği yapan butonun aynı olması durumunda butonu active olarak atadaık. a tagının clasına artık @css diyebilirim
+        var css = "list-group-item";
+        if (category.CategoryId == Model.CurrentCategory)
+        {
+            css += " ";
+        }
+        <!--?category ProductController içindeki parametreden geliyo-->
+        <a href="/product/index?category=@category.CategoryId" class="@css">@category.CategoryName</a>
+    }
+
+</div>

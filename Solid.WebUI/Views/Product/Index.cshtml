@@ -1,14 +1,14 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
 @model Solid.WebUI.Models.ProductListModel
+
+
 @{
     Layout = "~/Views/_Layout.cshtml";
 }
 
 
 <div>
-    <table>
+    <table class="table table-responsive">
         <tr>
             <td>Product Name</td>
             <td>Product Price</td>
@@ -24,5 +24,13 @@
         }
     </table>
 </div>
+
+<product-list-pager 
+                    current-category="@Model.CurrentCategory" 
+                    current-page="@Model.CurrentPage" 
+                    page-count="@Model.PageCount" 
+                    page-size="@Model.PageSize">
+
+</product-list-pager>
 
 

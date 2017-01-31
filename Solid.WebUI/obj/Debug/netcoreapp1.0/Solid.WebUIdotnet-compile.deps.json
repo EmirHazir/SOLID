@@ -27,7 +27,10 @@
           "Solid.Services": "1.0.0",
           "Microsoft.AspNetCore.StaticFiles": "1.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "1.1.0",
-          "Microsoft.Extensions.FileProviders.Physical": "1.1.0"
+          "Microsoft.Extensions.FileProviders.Physical": "1.1.0",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1",
+          "Microsoft.AspNetCore.Razor.Runtime": "1.0.0",
+          "System.Runtime": "4.3.0"
         },
         "compile": {
           "Solid.WebUI.dll": {}
@@ -2768,7 +2771,10 @@
           "Solid.Services": "1.0.0",
           "Microsoft.AspNetCore.StaticFiles": "1.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "1.1.0",
-          "Microsoft.Extensions.FileProviders.Physical": "1.1.0"
+          "Microsoft.Extensions.FileProviders.Physical": "1.1.0",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1",
+          "Microsoft.AspNetCore.Razor.Runtime": "1.0.0",
+          "System.Runtime": "4.3.0"
         },
         "runtime": {
           "Solid.WebUI.dll": {}

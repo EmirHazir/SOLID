@@ -21,8 +21,13 @@ namespace Solid.WebUI
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            //Productların sayfalarda gösterilmesi için(verilerin)
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<IProductDal, EfProductDal>();
+            //Categorilerin sayfalarda gösterilmesi için(verilerin)
+            services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<ICategoryDal, EfCategoryDal>();
+
             services.AddMvc();
         }
 
@@ -34,7 +39,7 @@ namespace Solid.WebUI
             {
                 app.UseDeveloperExceptionPage();
             }
-            //app.UseStaticFiles(); Middleware klasörü içinde yazdğım statik class
+            //app.UseStaticFiles(); Middleware klasörü içinde yazdğım statik class ApplicationBuilderExtentions
             app.UseFileServer();
             app.UseNodeModules(env.ContentRootPath);
 

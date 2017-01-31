@@ -189,4 +189,7 @@ C:\Users\BURCUALA\Documents\Visual Studio 2015\Projects\Solid\Solid.WebUI\Progra
 C:\Users\BURCUALA\Documents\Visual Studio 2015\Projects\Solid\Solid.WebUI\Startup.cs
 C:\Users\BURCUALA\Documents\Visual Studio 2015\Projects\Solid\Solid.WebUI\Controllers\ProductController.cs
 C:\Users\BURCUALA\Documents\Visual Studio 2015\Projects\Solid\Solid.WebUI\Middlewares\ApplicationBuilderExtentions.cs
+C:\Users\BURCUALA\Documents\Visual Studio 2015\Projects\Solid\Solid.WebUI\Models\CategoryListModel.cs
 C:\Users\BURCUALA\Documents\Visual Studio 2015\Projects\Solid\Solid.WebUI\Models\ProductListModel.cs
+C:\Users\BURCUALA\Documents\Visual Studio 2015\Projects\Solid\Solid.WebUI\TagHelpers\PagingTagHelper.cs
+C:\Users\BURCUALA\Documents\Visual Studio 2015\Projects\Solid\Solid.WebUI\ViewComponents\CategoryListViewComponent.cs

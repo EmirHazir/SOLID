@@ -35,7 +35,8 @@ namespace Solid.Services.SSConcrete
 
         public List<Product> GetByCategory(int categoryId)
         {
-            return _productDal.GetList(x=>x.CategoryId == categoryId);
+            //Kategori vermezse category==0 tümliste gelir
+            return _productDal.GetList(x=>x.CategoryId == categoryId || categoryId == 0);
         }
 
         //public Product GetById(int productId)
