@@ -18,7 +18,7 @@ namespace Solid.Services.SSAbstract
 
         void Delete(int productId);
 
-        //Product GetById(int productId);
+        Product GetById(int productId);
 
 
     }

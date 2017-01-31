@@ -36,7 +36,7 @@ namespace Solid.Core.SCDataAccess.SCEntityFramework
         {
             using (var context = new TContext())
             {
-                return context.Set<TEntity>().SingleOrDefault();
+                return context.Set<TEntity>().SingleOrDefault(filter);
             }
         }
 

@@ -1,0 +1,20 @@
+﻿@model Solid.WebUI.Models.CartListViewModel
+
+<ul class="dropdown-menu">
+    @foreach (var item in Model.Cart.CartLines)
+    {
+        <li>
+            <a>@item.Product.ProductName <span class="badge">@item.Quantity</span></a>
+        </li>
+    }
+
+    <li role="separator" class="divider"></li>
+    <li>
+        <a><span class="glyphicon glyphicon-align-left glyphicon-shopping-cart" aria-hidden="true"></span>@Model.Cart.Total</a>
+    </li>
+
+    <li role="separator" class="divider"></li>
+    <li>
+        <a asp-controller="Cart" asp-action="List"><span class="glyphicon glyphicon-align-left glyphicon-home"  aria-hidden="true"></span>Cart Listesine git</a>
+    </li>
+</ul>

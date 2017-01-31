@@ -1,0 +1,3 @@
+﻿Biz Sessionlarda Object tutamıyoruz bu zaten normal bu yüzden bunun için bir yapı hazırlıyorum. string degerleri stelize and desterilize işlemleri yapmamız gerek yani string objeye çevirmemiz gerek.
+
+bunun için sessionu genişletip bir metod yazmamız gerek setString ve getInt32 var zaten benim burda SetObject yazmam lazım

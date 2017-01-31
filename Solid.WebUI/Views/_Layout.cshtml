@@ -4,9 +4,11 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.css"  rel="stylesheet"/>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/node_modules/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="/node_modules/jquery-validation/jquery.validate.unobtrusive.js"></script>
 </head>
 <body>
     <div class="col-md-12">
@@ -25,20 +27,14 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Link</a></li>
+                        <li class="active"><a asp-controller="Account" asp-action="Login">Admin <span class="sr-only">(current)</span></a></li>
+ 
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
+                            @await Component.InvokeAsync("CartSummary")
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -52,6 +48,10 @@
     </div>
     
     <div class="col-md-10">
+        @if (TempData["message"]!=null)
+        {
+            <div class="alert alert-info" role="alert">@TempData["message"]</div>
+        }
         @RenderBody()
     </div>
     <div class="col-md-12">Footer</div>

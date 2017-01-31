@@ -4,24 +4,44 @@
       "version": "1.0.1",
       "type": "platform"
     },
-    "Microsoft.AspNetCore.Diagnostics": "1.0.0",
-    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
-    "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
-    "Microsoft.Extensions.Logging.Console": "1.0.0",
-    "Microsoft.AspNetCore.Mvc": "1.0.1",
+    "Microsoft.AspNetCore.Diagnostics": "1.1.0",
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.1.0",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.1.0",
+    "Microsoft.Extensions.Logging.Console": "1.1.0",
+    "Microsoft.AspNetCore.Mvc": "1.1.1",
     "Solid.Core": "1.0.0-*",
     "Solid.Entities": "1.0.0-*",
     "Solid.Services": "1.0.0-*",
-    "Microsoft.AspNetCore.StaticFiles": "1.0.0",
+    "Microsoft.AspNetCore.StaticFiles": "1.1.0",
     "Microsoft.AspNetCore.Http.Abstractions": "1.1.0",
     "Microsoft.Extensions.FileProviders.Physical": "1.1.0",
-    "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1",
-    "Microsoft.AspNetCore.Razor.Runtime": "1.0.0",
-    "System.Runtime": "4.3.0"
+    "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.1.1",
+    "Microsoft.AspNetCore.Razor.Runtime": "1.1.0",
+    "System.Runtime": "4.3.0",
+    "Microsoft.Extensions.Caching.Abstractions": "1.1.0",
+    "Microsoft.AspNetCore.Session": "1.1.0",
+    "Newtonsoft.Json": "9.0.1",
+    "Microsoft.AspNetCore.Mvc.TagHelpers": "1.1.1",
+    "System.IO.FileSystem.Primitives": "4.3.0",
+    "NETStandard.Library": "1.6.1",
+    "Microsoft.AspNetCore.Authorization": "1.1.0",
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0",
+    "Microsoft.AspNetCore.Authentication.Cookies": "1.1.0",
+    "Microsoft.EntityFrameworkCore": "1.1.0",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+    "System.ComponentModel.Annotations": "4.3.0",
+    "Microsoft.AspNetCore.Identity": "1.0.0",
+    "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview3-final",
+    "Microsoft.EntityFrameworkCore.Design": "1.1.0",
+    "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.0",
+    "Microsoft.AspNetCore.Razor.Tools": "1.0.0-preview2-final"
   },
 
+
   "tools": {
-    "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final"
+    "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final",
+    "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.0.0-preview3-final",
+    "Microsoft.AspNetCore.Razor.Tools": "1.0.0-preview2-final"
   },
 
   "frameworks": {
@@ -42,6 +62,10 @@
     "configProperties": {
       "System.GC.Server": true
     }
+  },
+
+  "runtimes": {
+    "win10-x64": {}
   },
 
   "publishOptions": {

@@ -1,0 +1,55 @@
+﻿@model Solid.WebUI.Models.CartListViewModel
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h2>your cart</h2>
+<table class="table">
+    <tr>
+        <td>Ürün Adı</td>
+        <td>Ürün Fiyat</td>
+        <td>Stok Miktarı</td>
+        <td>Adeti</td>
+        <td></td>
+    </tr>
+    @foreach (var item in Model.Cart.CartLines)
+    {
+        <tr>
+            <td>@item.Product.ProductName</td>
+            <td>@item.Product.UnitPrice</td>
+            <td>@item.Product.UnitsInStock</td>
+            <td>@item.Quantity</td>
+            <td class="text-right"><a class="btn btn-xs btn-danger" asp-controller="Cart" asp-action="Remove" asp-route-productId="@item.Product.ProductId"><span class="glyphicon glyphicon-remove"></span> Carttan çıkar</a></td>
+        </tr>
+    }
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+            <h3>Total</h3>
+        </td>
+        <td class="text-right">
+            <h3>
+                <strong>@Model.Cart.Total</strong>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>
+            <a asp-controller="Product" asp-action="Index" class="btn btn-xs btn-default">
+                <span class="glyphicon glyphicon-shopping-cart"></span> Alış-verişe devam et
+            </a>
+        </td>
+        <td class="text-right">
+            <a asp-controller="Cart" asp-action="Complete" class="btn btn-xs btn-success">
+                <span class="glyphicon glyphicon-shopping-play"></span> Ödeme ekranına git
+            </a>
+        </td>
+    </tr>
+</table>

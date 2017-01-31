@@ -25,7 +25,7 @@ namespace Solid.Services.SSConcrete
 
         public void Delete(int productId)
         {
-            _productDal.Delete(new Product {ProductId = productId });
+            _productDal.Delete(new Product { ProductId = productId });
         }
 
         public List<Product> GetAll()
@@ -36,13 +36,13 @@ namespace Solid.Services.SSConcrete
         public List<Product> GetByCategory(int categoryId)
         {
             //Kategori vermezse category==0 tümliste gelir
-            return _productDal.GetList(x=>x.CategoryId == categoryId || categoryId == 0);
+            return _productDal.GetList(x => x.CategoryId == categoryId || categoryId == 0);
         }
 
-        //public Product GetById(int productId)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public Product GetById(int productId)
+        {
+            return _productDal.Get(x => x.ProductId == productId);
+        }
 
         public void Update(Product product)
         {
