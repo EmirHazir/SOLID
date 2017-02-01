@@ -2,7 +2,7 @@
 .Net Core C#
 
 
-Its waht you need about Core. incl Repository, Cruds, works with DB, Costum Identity, Services, Sessions, 
+Its what you need about Core. incl Repository, Cruds, works with DB, Costum Identity, Services, Sessions, 
 MiddleWares ,TagHelpers, ViewComponents and much more with keep SOLID rules!
 
 Hope you can use in your project!
